@@ -16,14 +16,6 @@
   },
   "scripts": {
     "test": "jest --watch",
-    "test:1": "jest __tests__/01*.test.js  --watch",
-    "test:2": "jest __tests__/02*.test.js  --watch",
-    "test:3": "jest __tests__/03*.test.js  --watch",
-    "test:4": "jest __tests__/04*.test.js  --watch",
-    "test:5": "jest __tests__/05*.test.js  --watch",
-    "test:6": "jest __tests__/06*.test.js  --watch",
-    "test:7": "jest __tests__/07*.test.js  --watch",
-    "test:8": "jest __tests__/08*.test.js  --watch",
     "push": "node testProcessor"
   },
   "dependencies": {
