@@ -200,9 +200,9 @@ describe('Lenses', () => {
   });
 
   describe('bonus: lensIndex', () => {
-
     const first = lensIndex(0);
     const mockValues = [0, 1, 2];
+    const addThree = (x) => x + 3;
 
     test('It should be a function', () => {
       shouldBeAFunction(lensIndex);
@@ -218,6 +218,10 @@ describe('Lenses', () => {
 
     test('It should allow us to set values at index x', () => {
       expect(first.set(42, mockValues)).toEqual([42, 1, 2]);
+    });
+
+    test('It should be able to over a value at a given index', () => {
+      expect(first.over(addThree, mockValues)).toEqual([3, 1, 2]);
     });
   });
 });
